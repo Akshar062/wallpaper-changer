@@ -1,23 +1,39 @@
-# Scheduled Wallpaper Changer – Automate Your Wallpapers!
+# 🖼️ Scheduled Wallpaper Changer
 
-Repository: Akshar062/wallpaper-changer
+An Android application that automatically changes your device wallpapers on a customizable schedule.
 
-## Description
+## 📱 Overview
 
-✨ Transform your device with automated wallpapers! The Scheduled Wallpaper Changer app lets you effortlessly change your home and lock screen wallpapers based on a predefined schedule. Whether you want a fresh look every hour, daily inspirations, or a custom slideshow, this app ensures your screen always stays dynamic and exciting.
+Scheduled Wallpaper Changer transforms your Android experience by automating wallpaper changes for both home and lock screens. Set it once and enjoy a constantly refreshing look on your device without manual intervention.
 
-## Key Features
+## ✨ Features
 
-🌟 Key Features:
-✔ Schedule Wallpapers: Set wallpapers to change at specific times.
-✔ Home & Lock Screen Support: Customize wallpapers for both screens separately.
-✔ Recurring Changes: Choose from daily, weekly, or custom intervals.
-✔ Multiple Wallpaper Slideshow: Select multiple wallpapers and rotate them automatically.
-✔ Instant Change: Use the "Set Now" button to update wallpapers instantly.
-✔ Live Preview: See how your wallpaper will look before applying.
-✔ Battery Optimized: Uses WorkManager for reliable and efficient scheduling.
-✔ Easy Selection: Pick images from your gallery using MediaStore or file picker.
+- **⏰ Scheduling System**: Set wallpapers to change at specific times of day
+- **🔒 Screen Flexibility**: Configure different wallpapers for home and lock screens
+- **🔄 Interval Options**: Daily, weekly, or custom recurring schedules
+- **📚 Image Collection**: Create slideshows from multiple selected images
+- **⚡ Manual Override**: "Set Now" functionality for immediate wallpaper changes
+- **👁️ Live Preview**: See how wallpapers will look before applying
+- **🔋 Power Efficient**: Optimized using WorkManager for minimal battery impact
+- **📁 Simple Selection**: Intuitive gallery integration via MediaStore API
 
-With Scheduled Wallpaper Changer, your screen will always match your mood and style—effortlessly! 🎨✨
+## 🛠️ Technical Details
 
-📥 Download now and personalize your Android experience like never before!
+- Built with Kotlin and Jetpack Compose
+- Implements Material 3 design principles
+- Uses WorkManager for reliable background operations
+- Supports Android 8.0 (API level 26) and above
+
+## 🚀 Getting Started
+
+1. Clone this repository
+2. Open in Android Studio
+3. Build and run on your device
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit a pull request or open an issue.
