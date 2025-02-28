@@ -54,8 +54,8 @@
 -dontwarn dagger.hilt.**
 
 # Keep WorkManager jobs (if using)
-#-keep class androidx.work.Worker { *; }
-#-keep class androidx.work.WorkManager { *; }
+-keep class androidx.work.Worker { *; }
+-keep class androidx.work.WorkManager { *; }
 
 # Keep Room database models (if using)
 -keep class androidx.room.** { *; }
