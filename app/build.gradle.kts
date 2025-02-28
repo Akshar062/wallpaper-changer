@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.jetbrains.kotlin.serialization)
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -47,20 +49,48 @@ android {
 }
 
 dependencies {
+    // Core
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
 
-    // Jetpack Compose
+    // Jetpack Compose (using BOM for version alignment)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-//    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)  // Only once
 
-    // Dependency Injection (If using Koin)
-//    implementation(libs.koin.android)
+    // Coil for image loading
+    implementation(libs.coil.compose)
+
+    // Kotlinx Serialization (JSON)
+    implementation(libs.kotlinx.serialization.json)
+
+    // Room for local database
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+
+    // WorkManager for scheduling tasks
+    implementation(libs.androidx.work.runtime.ktx)
+
+    // Material icons extended
+    implementation(libs.androidx.material.icons.extended)
+
+    // Lifecycle and LiveData
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.runtime.livedata)
+
+    // Koin for Dependency Injection
+    implementation(libs.koin.androidx.compose)
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose.navigation)
+
+    // Accompanist for System UI Controller
+    implementation(libs.accompanist.systemuicontroller)
 
     // Unit Testing
     testImplementation(libs.junit)
