@@ -21,3 +21,31 @@ Repository: Akshar062/wallpaper-changer
 With Scheduled Wallpaper Changer, your screen will always match your mood and style—effortlessly! 🎨✨
 
 📥 Download now and personalize your Android experience like never before!
+
+## Installation
+
+To install the Scheduled Wallpaper Changer app, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Akshar062/wallpaper-changer.git
+   ```
+2. Open the project in Android Studio.
+3. Build and run the app on your Android device or emulator.
+
+## Usage
+
+1. Open the Scheduled Wallpaper Changer app.
+2. Select the wallpapers you want to use from your gallery.
+3. Set the schedule for changing wallpapers (e.g., hourly, daily, weekly).
+4. Customize wallpapers for your home and lock screens separately.
+5. Use the "Set Now" button to instantly change the wallpaper.
+6. Enjoy your dynamic and personalized wallpapers!
+
+## Contributing
+
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
