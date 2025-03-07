@@ -92,6 +92,13 @@ dependencies {
     // Accompanist for System UI Controller
     implementation(libs.accompanist.systemuicontroller)
 
+    // permission
+    implementation(libs.accompanist.permissions)
+
+    // navigation
+    implementation(libs.androidx.navigation.compose)
+
+
     // Unit Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
